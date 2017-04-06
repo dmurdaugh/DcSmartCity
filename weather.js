@@ -46,7 +46,7 @@ var weatherSetup = function() {
 		else
 		{
 			console.log("WEATHER!!!");
-			var callURL = "https://8d06e217-8e7e-49ca-91d9-8f1dd6f85d88:TAao24v59K@twcservice.mybluemix.net/api/weather/v1/geocode/" + response.lat1 + "/" + response.long1 + "/forecast/hourly/48hour.json?units=m&language=en-US";
+			var callURL = "https://f009d899-2257-48b2-b823-04f754f47a25:tCSvWb9N8N@twcservice.mybluemix.net/api/weather/v1/geocode/" + response.lat1 + "/" + response.long1 + "/forecast/hourly/48hour.json?units=m&language=en-US";
 			request.get(callURL, {
 				json: true
 			},
