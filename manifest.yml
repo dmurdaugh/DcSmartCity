@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: DcSmartCity
+  host: DcSmartCity
+  disk_quota: 1024M
+  services:
+  - Weather Company Data-l6
+  - SmartCity-iotf-iotf-service
+  - Availability Monitoring-94
