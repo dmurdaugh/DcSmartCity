@@ -17,7 +17,7 @@ var weatherSetup = function() {
 		"domain": "internetofthings.ibmcloud.com",
 		"type" : "weather-iot",
 		"auth-method" : "token",
-		"auth-token" : "Q)nil1BLZzBCfPg-+l"
+		"auth-token" : "7048419193"
 	};
 	var deviceClient = new Client.IotfDevice(config);
 	deviceClient.connect();
