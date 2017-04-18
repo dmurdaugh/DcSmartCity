@@ -1,15 +1,31 @@
-# Node.js Hello World Sample
+# Node.js Data Analysis Application
 
-This application demonstrates a simple, reusable Node.js web application based on the Express framework.
+The Node.js Application demonstrates the collection of various forms of information
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/nodejs-helloworld)
+## Run on Bluemix with Varying Application Names - First Deploy
 
-## Run the app locally
+1. Log into Bluemix and view the Dashboard
+2. Select the Node.js Cloud Foundary application to be deployed
+3. Navigate to the Runtime tab
+4. Add the following custom environment variables and asscociated values:
+	* IOT_AUTHMETHOD
+	* IOT_AUTHTOKEN
+	* IOT_DOMAIN
+	* IOT_ID
+	* IOT_ORG
+	* IOT_TYPE
+	* WEATHER_CALL_URL
+5. Navigate to and open manifest.yml:
+	* Edit the "name" and "host" field to the name of the Cloud Foundary application to be deployed 
+6. Navigate to and open index.html:
+	* Edit the main form's action field to the following format:
+		* https://nameofcloudfoundaryapplication.mybluemix.net/process_get
 
-1. [Install Node.js][]
-+ cd into this project's root directory
-+ Run `npm install` to install the app's dependencies
-+ Run `npm start` to start the app
-+ Access the running app in a browser at <http://localhost:6001>
+	
+## Run on Bluemix - General Deploy
+1. Navigate to and open manifest.yml:
+	* Edit the "name" and "host" field to the name of the Cloud Foundary application to be deployed 
+2. Navigate to and open index.html:
+	* Edit the main form's action field to the following format:
+		* https://nameofcloudfoundaryapplication.mybluemix.net/process_get
 
-[Install Node.js]: https://nodejs.org/en/download/
