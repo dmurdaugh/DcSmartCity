@@ -7,4 +7,4 @@ applications:
   host: DcSmartCity
   disk_quota: 1024M
   services:
-  - Weather Company Data-z4
+  - Weather Company Data-l6
